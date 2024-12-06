@@ -1,0 +1,138 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #c2c2c2; /* Fondo gris */
+    color: #ffffff; /* Texto blanco */
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    border-bottom: 5px solid #a9a9a9; /* Línea decorativa */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Texto en mayúsculas para mayor impacto */
+}
+
+header p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-style: italic; /* Añade un toque distintivo al subtítulo */
+}
+
+/* Imagen QR */
+header img {
+    margin-top: 1rem;
+    width: 300px;
+    height: 250px;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+/* Contenido Principal */
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones */
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #c2c2c2; /* Títulos en gris */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background: #f0f0f0; /* Fondo neutro */
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para cada elemento */
+}
+
+section ul li::before {
+    content: "✔";
+    color: #4CAF50; /* Check verde */
+    font-weight: bold;
+    margin-right: 0.8rem;
+}
+
+/* Botones */
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0.5rem 0;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+a:hover {
+    background-color: #555;
+    transform: translateY(-2px); /* Efecto de levitación */
+}
+
+a[href*="Android"] {
+    background-color: #2196F3; /* Azul */
+}
+
+a[href*="iOS"] {
+    background-color: #FF5722; /* Naranja */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+}

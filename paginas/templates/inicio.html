@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.O Services - Ventas y Servicios de Cortinas</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> <!-- Cargar librería QRCode.js -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="{% static 'images/LogoM.O.png' %}" alt="Logo de M.O Services" class="logo">
+        <h1>Bienvenidos a M.O Services</h1>
+        <p>La mejor solución para tus cortinas y servicios asociados</p>
+        <div id="qr-code-container"></div> <!-- Contenedor del código QR -->
+        <p>Escanea el código QR para descargar nuestra aplicación y disfrutar de nuestros servicios.</p>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sobre Nosotros -->
+        <section>
+            <h2>¿Quiénes somos?</h2>
+            <p>
+                En M.O Services, nos especializamos en la venta de cortinas de alta calidad y en la prestación de servicios asociados como instalación, lavado y mantenimiento. Nuestra misión es brindarte una experiencia sin igual al decorar y cuidar tus espacios.
+            </p>
+        </section>
+
+        <!-- Servicios -->
+        <section>
+            <h2>¿Qué ofrecemos?</h2>
+            <ul>
+                <li>Venta de cortinas modernas y funcionales.</li>
+                <li>Servicio profesional de instalación.</li>
+                <li>Mantenimiento para prolongar la vida útil de tus cortinas.</li>
+                <li>Lavado especializado para mantenerlas impecables.</li>
+                <li>Herramientas de cotización rápidas y confiables.</li>
+            </ul>
+        </section>
+
+        <!-- Beneficios -->
+        <section>
+            <h2>¿Por qué elegirnos?</h2>
+            <ul>
+                <li>Productos de alta calidad a precios competitivos.</li>
+                <li>Atención personalizada y soporte continuo.</li>
+                <li>Servicios rápidos y confiables adaptados a tus necesidades.</li>
+                <li>Aplicación intuitiva para facilitar tus compras y reservas.</li>
+            </ul>
+        </section>
+
+        <!-- Descargas -->
+        <section>
+            <h2>Descarga nuestra aplicación</h2>
+            <p>
+                Nuestra aplicación está disponible para Android. Descárgala desde el enlace a continuación.
+            </p>
+            <a href="https://drive.google.com/uc?export=download&id=1j70LfUTCYfygq0NX10XvtZ2_PxqzySBD" target="_blank">Descargar APK para Android</a>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 M.O Services. Todos los derechos reservados.</p>
+        <p>Contacto: soporte@moservices.com | Tel: +56 9 1234 5678</p>
+    </footer>
+
+    <script>
+        // Generar código QR
+        const qrCodeContainer = document.getElementById('qr-code-container');
+        QRCode.toCanvas(qrCodeContainer, 'https://drive.google.com/uc?export=download&id=1j70LfUTCYfygq0NX10XvtZ2_PxqzySBD', {
+            width: 250,
+            margin: 2,
+            color: {
+                dark: "#000000",  // Color oscuro del QR
+                light: "#ffffff"  // Fondo blanco del QR
+            }
+        });
+    </script>
+</body>
+</html>
